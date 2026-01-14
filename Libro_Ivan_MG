@@ -1,0 +1,76 @@
+import java.util.ArrayList;
+
+public class Libro {
+
+    String libro;
+    String titulo;
+    String Autor;
+    int NumPaginas;
+    int valoracion;
+
+    private static ArrayList<String> Lectura = new ArrayList<>();
+
+
+    public Libro() {
+        this.libro = libro;
+        this.Autor = Autor;
+        this.NumPaginas = NumPaginas;
+        this.valoracion = valoracion;
+        this.titulo = titulo;
+    }
+
+    public String getLibro() {
+        return libro;
+    }
+
+    public void setLibro(String libro) {
+        this.libro = libro;
+    }
+
+    public String getAutor() {
+        return Autor;
+    }
+
+    public void setAutor(String autor) {
+        Autor = autor;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public int getNumPaginas() {
+        return NumPaginas;
+    }
+
+    public void setNumPaginas(int numPaginas) {
+        NumPaginas = numPaginas;
+    }
+
+    public int getValoracion() {
+        return valoracion;
+    }
+
+    public void setValoracion(int valoracion) {
+        this.valoracion = valoracion;
+    }
+
+    public void mostrarInfo() {
+        for (String Libro : Lectura);
+        System.out.println(getAutor() + getLibro() + getValoracion() + getNumPaginas());
+
+    }
+
+    public static void main(String[] args) {
+
+    Libro libro1 = new Libro();
+    libro1.titulo="Harry Potter";
+    libro1.Autor="J.K Rowling";
+    libro1.NumPaginas=80;
+    libro1.valoracion=9;
+    }
+}
